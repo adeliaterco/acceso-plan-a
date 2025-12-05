@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Target, ArrowLeft, ArrowRight, User, Mail, Lock, Heart } from 'lucide-react';
+import { Target, ArrowLeft, ArrowRight, User, Mail, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -22,7 +22,6 @@ export default function Register() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    password: '',
     breakupType: '',
     objective: '',
   });
@@ -33,7 +32,7 @@ export default function Register() {
     e.preventDefault();
     
     if (step === 1) {
-      if (!formData.name || !formData.email || !formData.password) {
+      if (!formData.name || !formData.email) {
         toast.error('Por favor completa todos los campos');
         return;
       }
@@ -88,7 +87,7 @@ export default function Register() {
             <Target className="h-12 w-12 text-primary mx-auto mb-4" />
             <h1 className="font-display text-3xl">PLAN A</h1>
             <p className="text-muted-foreground mt-2">
-              {step === 1 ? 'Crea tu cuenta' : 'Cuéntanos sobre ti'}
+              {step === 1 ? 'Acceso rápido' : 'Cuéntanos sobre ti'}
             </p>
           </div>
 
@@ -130,21 +129,6 @@ export default function Register() {
                       placeholder="tu@email.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="pl-10 bg-muted/50 border-border"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="password">Contraseña</Label>
-                  <div className="relative">
-                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                    <Input
-                      id="password"
-                      type="password"
-                      placeholder="••••••••"
-                      value={formData.password}
-                      onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                       className="pl-10 bg-muted/50 border-border"
                     />
                   </div>
@@ -214,7 +198,7 @@ export default function Register() {
 
           {step === 1 && (
             <p className="text-center text-sm text-muted-foreground mt-6">
-              Tus datos se guardan solo en tu dispositivo.
+              Acceso simplificado para una mejor experiencia.
               <br />
               100% privado, sin servidores.
             </p>
