@@ -221,7 +221,6 @@ export default function Index() {
                   'Análisis de señales de tu ex',
                   'Diario de reflexión guiado',
                   'Biblioteca de recursos recomendados',
-                  '100% gratis, sin paywalls',
                   'Datos 100% locales y privados',
                 ].map((feature, index) => (
                   <motion.div
@@ -344,7 +343,7 @@ export default function Index() {
       {/* Simple Footer for Landing */}
       <footer className="py-8 border-t border-border/50">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2024 PLAN A - Reconquista en 21 Días. 100% Gratis.</p>
+          <p>© 2024 PLAN A - Reconquista en 21 Días.</p>
         </div>
       </footer>
     </div>

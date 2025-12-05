@@ -92,7 +92,7 @@ export default function Tools() {
               <Sparkles className="h-8 w-8 text-primary" />
             </div>
             <div className="flex-1 text-center md:text-left">
-              <h2 className="font-display text-2xl mb-2">Todas las herramientas 100% GRATIS</h2>
+              <h2 className="font-display text-2xl mb-2">Todas las herramientas</h2>
               <p className="text-muted-foreground">
                 Sin paywalls, sin suscripciones, sin límites. Usa todas las herramientas cuantas veces necesites.
               </p>

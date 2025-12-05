@@ -47,7 +47,6 @@ export function Footer() {
 
         <div className="border-t border-border/50 mt-8 pt-6 text-center text-sm text-muted-foreground">
           <p>© 2024 PLAN A - Reconquista en 21 Días. Todos los derechos reservados.</p>
-          <p className="mt-1">100% GRATIS - Sin paywalls - Datos 100% locales</p>
         </div>
       </div>
     </footer>
