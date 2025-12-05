@@ -81,7 +81,7 @@ export default function Index() {
                 className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-6"
               >
                 <Target className="h-5 w-5 text-primary" />
-                <span className="text-sm font-medium text-primary">16 Módulos • 100% Gratis</span>
+                <span className="text-sm font-medium text-primary">Sistema Completo</span>
               </motion.div>
 
               <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight mb-6">
